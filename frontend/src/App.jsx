@@ -1,9 +1,10 @@
 import React from "react";
+import Calculator from "./page/Calculator/Calculator";
 
 function App() {
   return (
     <>
-      <div>age calculator</div>
+      <Calculator />
     </>
   );
 }
