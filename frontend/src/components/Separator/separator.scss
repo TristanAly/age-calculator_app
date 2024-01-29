@@ -1,0 +1,22 @@
+.separatorButton {
+  margin-top: 40px;
+  align-items: center;
+  & .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: black;
+  }
+  & button {
+    position: absolute;
+    right: 0;
+    background-color: $Purple;
+    width: 90px;
+    height: 90px;
+    border: none;
+    border-radius: 50%;
+    & img {
+      object-fit: cover;
+      padding: 5px;
+    }
+  }
+}

@@ -3,9 +3,15 @@ import React from "react";
 const Result = ({ year, month, day }) => {
   return (
     <div className="result">
-      <p>{year || "--"} years</p>
-      <p>{month || "--"} months</p>
-      <p>{day || "--"} days</p>
+      <p>
+        <span>{year}</span> years
+      </p>
+      <p>
+        <span>{month}</span> months
+      </p>
+      <p>
+        <span>{day}</span> days
+      </p>
     </div>
   );
 };
