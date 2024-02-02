@@ -13,7 +13,7 @@ export function dayInMonth(year, month) {
   } else if (daysMonth30.includes(month)) {
     return 30;
   } else {
-    throw new Error("Mois invalide");
+    return monthValidation(month);
   }
 }
 

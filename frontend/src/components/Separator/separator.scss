@@ -19,4 +19,12 @@
       padding: 5px;
     }
   }
+  @media screen and (max-width: 600px) {
+    margin-top: 20px;
+    & button {
+      left: 40%;
+      width: 70px;
+      height: 70px;
+    }
+  }
 }

@@ -59,7 +59,7 @@ const Form = () => {
   return (
     <div className="containerForm">
       <form onSubmit={handleFormSubmit} noValidate>
-        <div>
+        <div className="inputs">
           <div className="labelAndInput">
             <label htmlFor="day">DAY</label>
             <input
