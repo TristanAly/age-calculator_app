@@ -1,11 +1,10 @@
 import React from "react";
-import Form from "../../components/form/form";
-import FormTest from "../../components/Form/FormTest";
+import Form from "../../components/Form/Form";
 
 const Calculator = () => {
   return (
     <div>
-      <FormTest />
+      <Form />
     </div>
   );
 };
