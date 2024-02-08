@@ -39,3 +39,10 @@ export function yearValidation(year) {
   }
   return "";
 }
+
+export function globalYearValidation(inputDate) {
+  const currentDate = new Date();
+  return inputDate > currentDate
+    ? "La date ne peut pas être dans le futur."
+    : "";
+}

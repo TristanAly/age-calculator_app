@@ -8,6 +8,7 @@ import {
   dayValidation,
   monthValidation,
   yearValidation,
+  globalYearValidation,
 } from "../../Context/dateFunction";
 
 const Form = () => {
@@ -31,9 +32,9 @@ const Form = () => {
     const inputDate = new Date(year, month - 1, day);
 
     const errors = {
-      day: dayValidation(day, year, month),
-      month: monthValidation(month),
-      year: yearValidation(year),
+      day: dayValidation(day, year, month) || globalYearValidation(inputDate),
+      month: monthValidation(month) || globalYearValidation(inputDate),
+      year: yearValidation(year) || globalYearValidation(inputDate),
     };
 
     const inputs = ["day", "month", "year"];
